@@ -1,0 +1,23 @@
+.mod_canvas{width:1144px;height:280px;background-color:#fff;background-image:url(../../project/7//header1.jpg)}
+.mod_canvas .layer_2{
+	position:absolute;left:556px;top:15px;background-size:100% 100%;background-image:url(../../project/7/a_slogan.png);
+	-webkit-animation: frame_layer_2 1s infinite;
+	-moz-animation: frame_layer_2 1s infinite;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:119px;height:86px;}
+	20% {width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(15deg) ;-webkit-transform-origin:50% 0%;}
+	40% {width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-10deg) ;-webkit-transform-origin:50% 0%;}
+	60% {width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(5deg) ;-webkit-transform-origin:50% 0%;}
+	80% {width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-5deg) ;-webkit-transform-origin:50% 0%;}
+	100% {width:119px;height:86px;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:119px;height:86px;}
+	20% {width:119px;height:86px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(15deg) ;-moz-transform-origin:50% 0%;}
+	40% {width:119px;height:86px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-10deg) ;-moz-transform-origin:50% 0%;}
+	60% {width:119px;height:86px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(5deg) ;-moz-transform-origin:50% 0%;}
+	80% {width:119px;height:86px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-5deg) ;-moz-transform-origin:50% 0%;}
+	100% {width:119px;height:86px;}
+}

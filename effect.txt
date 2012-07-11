@@ -1,0 +1,435 @@
+[
+	{	"name":"吸引",
+		"name_eng":"Attention seekers",
+		"data":[
+					{"name":"闪烁",
+					 "name_eng":"flash",	
+					 "frame":[
+							{"time":0,"style":{"opacity":1}},
+							{"time":0.25,"style":{"opacity":0.5}},
+							{"time":0.5,"style":{"opacity":1}},
+							{"time":0.75,"style":{"opacity":0.5}},
+							{"time":1,"style":{"opacity":1}}
+					]}
+					,{"name":"震动",
+					 "name_eng":"shake",	
+					 "frame":[
+							{"time":0,"style":{"translate_x":"0"}},
+							{"time":0.1,"style":{"translate_x":"-10"}},
+							{"time":0.2,"style":{"translate_x":"10"}},
+							{"time":0.3,"style":{"translate_x":"-10"}},
+							{"time":0.4,"style":{"translate_x":"10"}},
+							{"time":0.5,"style":{"translate_x":"-10"}},
+							{"time":0.6,"style":{"translate_x":"10"}},
+							{"time":0.7,"style":{"translate_x":"-10"}},
+							{"time":0.8,"style":{"translate_x":"10"}},
+							{"time":0.9,"style":{"translate_x":"-10"}},
+							{"time":1,"style":{"translate_x":"10"}}
+					]}
+					,{"name":"弹跳",
+					"name_eng":"bounce",
+					 "frame":[
+							{"time":0,"style":{"translate_y":"0"}},
+							{"time":0.2,"style":{"translate_y":"0"}},
+							{"time":0.4,"style":{"translate_y":"-30"}},
+							{"time":0.5,"style":{"translate_y":"0"}},
+							{"time":0.6,"style":{"translate_y":"-15"}},
+							{"time":0.8,"style":{"translate_y":"0"}},
+							{"time":1,"style":{"translate_y":"0"}}
+					]}
+					,{"name":"Ta-da",
+					"name_eng":"Ta-da",
+					 "frame":[
+							{"time":0,"style":{}},
+							{"time":0.1,"style":{"scale_x":"0.9","rotate":"-3"}},
+							{"time":0.2,"style":{"scale_x":"0.9","rotate":"-3"}},
+							{"time":0.3,"style":{"scale_x":"1.1","rotate":"3"}},
+							{"time":0.4,"style":{"scale_x":"1.1","rotate":"-3"}},
+							{"time":0.5,"style":{"scale_x":"1.1","rotate":"3"}},
+							{"time":0.6,"style":{"scale_x":"1.1","rotate":"-3"}},
+							{"time":0.7,"style":{"scale_x":"1.1","rotate":"3"}},
+							{"time":0.8,"style":{"scale_x":"1.1","rotate":"-3"}},
+							{"time":0.9,"style":{"scale_x":"1.1","rotate":"3"}},
+							{"time":1,"style":{}}
+					]}
+					,{"name":"摇摆",
+					"name_eng":"swing",
+					 "frame":[
+							{"time":0,"style":{}},
+							{"time":0.2,"style":{"rotate":"15","orgin_x":"50","orgin_y":"0"}},
+							{"time":0.4,"style":{"rotate":"-10","orgin_x":"50","orgin_y":"0"}},
+							{"time":0.6,"style":{"rotate":"5","orgin_x":"50","orgin_y":"0"}},
+							{"time":0.8,"style":{"rotate":"-5","orgin_x":"50","orgin_y":"0"}},
+							{"time":1,"style":{}}
+					]}
+					,{"name":"摇晃",
+					"name_eng":"wobble",
+					 "frame":[
+							{"time":0,"style":{}},
+							{"time":0.15,"style":{"translate_x":"-25","rotate":"-5"}},
+							{"time":0.30,"style":{"translate_x":"20","rotate":"3"}},
+							{"time":0.45,"style":{"translate_x":"-15","rotate":"-3"}},
+							{"time":0.60,"style":{"translate_x":"10","rotate":"2"}},
+							{"time":0.75,"style":{"translate_x":"-5","rotate":"-1"}},
+							{"time":1,"style":{}}
+					]}
+					,{"name":"心跳",
+					"name_eng":"pulse",
+					 "frame":[
+							{"time":0,"style":{}},
+							{"time":0.5,"style":{"scale_x":"1.1","scale_y":"1.1"}},
+							{"time":1,"style":{}}
+					]}
+			]
+	}
+	,{	"name":"弹跳",
+		"name_eng":"Flippers",
+		"data":[
+					{"name":"360翻转",
+					"name_eng":"flip",
+					 "frame":[
+							{"time":0,		"style":{"perspective":"400"}},
+							{"time":0.4,	"style":{"perspective":"400","rotate_y":"170","translate_z":"150"}},
+							{"time":0.5,	"style":{"perspective":"400","rotate_y":"190","translate_z":"150"}},
+							{"time":0.8,	"style":{"perspective":"400","rotate_y":"359","scale_x":"0.95","scale_y":"0.95"}},
+							{"time":1,		"style":{}}
+					]}
+					,{"name":"垂直翻转进入",
+					"name_eng":"flipInX",
+					 "frame":[
+							{"time":0,		"style":{"perspective":"400","rotate_x":"90","opacity":"0"}},
+							{"time":0.4,	"style":{"perspective":"400","rotate_x":"-10"}},
+							{"time":0.7,	"style":{"perspective":"400","rotate_x":"10"}},
+							{"time":1,		"style":{"perspective":"400","rotate_x":"0","opacity":"1"}}
+					]}
+					,{"name":"垂直翻转退出",
+					"name_eng":"flipOutX",
+					 "frame":[
+							{"time":0,		"style":{"perspective":"400","rotate_x":"0","opacity":"1"}},
+							{"time":1,		"style":{"perspective":"400","rotate_x":"90","opacity":"0"}}
+					]}
+					,{"name":"水平翻转进入",
+					"name_eng":"flipInY",
+					 "frame":[
+							{"time":0,		"style":{"perspective":"400","rotate_y":"90","opacity":"0"}},
+							{"time":0.4,	"style":{"perspective":"400","rotate_y":"-10"}},
+							{"time":0.7,	"style":{"perspective":"400","rotate_y":"10"}},
+							{"time":1,		"style":{"perspective":"400","rotate_y":"0","opacity":"1"}}
+					]}
+					,{"name":"水平翻转退出",
+					"name_eng":"flipOutY",
+					 "frame":[
+							{"time":0,		"style":{"perspective":"400","rotate_y":"0","opacity":"1"}},
+							{"time":1,		"style":{"perspective":"400","rotate_y":"90","opacity":"0"}}
+					]}
+			]
+	}
+	,{	"name":"渐显",
+		"name_eng":"Fading entrances",
+		"data":[
+					{"name":"普通",
+					"name_eng":"fadein",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0"}},
+							{"time":1,		"style":{"opacity":"1"}}
+					]}
+					,{"name":"上",
+					"name_eng":"fadeInUp",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"0"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"-20"}}
+					]}
+					,{"name":"下",
+					"name_eng":"fadeInDown",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"-20"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"0"}}
+					]}
+					,{"name":"左",
+					"name_eng":"fadeInLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"-20"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+					,{"name":"右",
+					"name_eng":"fadeInRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"20"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+					,{"name":"大上",
+					"name_eng":"fadeInUpBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"2000"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"0"}}
+					]}
+					,{"name":"大下",
+					"name_eng":"fadeInDownBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"-2000"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"0"}}
+					]}
+					,{"name":"大左",
+					"name_eng":"fadeInLeftBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"-2000"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+					,{"name":"大右",
+					"name_eng":"fadeInRightBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"2000"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+			]
+	}
+	,{	"name":"渐隐",
+		"name_eng":"Fading exits",
+		"data":[
+					{"name":"普通",
+					"name_eng":"fadeOut",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1"}},
+							{"time":1,		"style":{"opacity":"0"}}
+					]}
+					,{"name":"上",
+					"name_eng":"fadeOutUp",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"-20"}}
+					]}
+					,{"name":"下",
+					"name_eng":"fadeOutDown",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"20"}}
+					]}
+					,{"name":"左",
+					"name_eng":"fadeOutLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"-20"}}
+					]}
+					,{"name":"右",
+					"name_eng":"fadeOutRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"20"}}
+					]}
+					,{"name":"大上",
+					"name_eng":"fadeOutUpBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"-2000"}}
+					]}
+					,{"name":"大下",
+					"name_eng":"fadeOutDownBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"20000"}}
+					]}
+					,{"name":"大左",
+					"name_eng":"fadeOutLeftBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"-2000"}}
+					]}
+					,{"name":"大右",
+					"name_eng":"fadeOutRightBig",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"20000"}}
+					]}
+			]
+	}
+	,{	"name":"弹跳进入",
+		"name_eng":"Bouncing entrances",
+		"data":[
+					{"name":"普通",
+					"name_eng":"bounceIn",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","scale_x":"0.3","scale_y":"0.3"}},
+							{"time":0.5,	"style":{"opacity":"1","scale_x":"1.05","scale_y":"1.05"}},
+							{"time":0.7,	"style":{"opacity":"1","scale_x":"0.9","scale_y":"0.9"}},
+							{"time":1,		"style":{"opacity":"1","scale_x":"1","scale_y":"1"}}
+					]}
+					,{"name":"上",
+					"name_eng":"bounceInUp",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"2000"}},
+							{"time":0.6,	"style":{"opacity":"1","translate_y":"-30"}},
+							{"time":0.8,	"style":{"opacity":"1","translate_y":"10"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"0"}}
+					]}
+					,{"name":"下",
+					"name_eng":"bounceInDown",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_y":"-2000"}},
+							{"time":0.6,	"style":{"opacity":"1","translate_y":"30"}},
+							{"time":0.8,	"style":{"opacity":"1","translate_y":"-10"}},
+							{"time":1,		"style":{"opacity":"1","translate_y":"0"}}
+					]}
+					,{"name":"左",
+					"name_eng":"bounceInLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"2000"}},
+							{"time":0.6,	"style":{"opacity":"1","translate_x":"-30"}},
+							{"time":0.8,	"style":{"opacity":"1","translate_x":"10"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+					,{"name":"右",
+					"name_eng":"bounceInRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","translate_x":"-2000"}},
+							{"time":0.6,	"style":{"opacity":"1","translate_x":"30"}},
+							{"time":0.8,	"style":{"opacity":"1","translate_x":"-10"}},
+							{"time":1,		"style":{"opacity":"1","translate_x":"0"}}
+					]}
+					
+			]
+	}
+	,{	"name":"弹跳退出",
+		"name_eng":"Bouncing exits",
+		"data":[
+					{"name":"普通",
+					"name_eng":"bounceOut",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","scale_x":"1","scale_y":"1"}},
+							{"time":0.25,	"style":{"opacity":"1","scale_x":"0.9","scale_y":"0.9"}},
+							{"time":0.5,	"style":{"opacity":"1","scale_x":"1.05","scale_y":"1.05"}},
+							{"time":1,		"style":{"opacity":"0","scale_x":"0.3","scale_y":"0.3"}}
+					]}
+					,{"name":"上",
+					"name_eng":"bounceOutUp",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":0.2,	"style":{"opacity":"1","translate_y":"20"}},
+							{"time":1,	"style":{"opacity":"0","translate_y":"-2000"}}
+					]}
+					,{"name":"下",
+					"name_eng":"bounceOutDown",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_y":"0"}},
+							{"time":0.2,	"style":{"opacity":"1","translate_y":"-20"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"2000"}}
+					]}
+					,{"name":"左",
+					"name_eng":"bounceOutLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":0.2,	"style":{"opacity":"1","translate_x":"20"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"-2000"}}
+					]}
+					,{"name":"右",
+					"name_eng":"bounceOutRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","translate_x":"0"}},
+							{"time":0.2,	"style":{"opacity":"1","translate_x":"-20"}},
+							{"time":1,		"style":{"opacity":"0","translate_x":"2000"}}
+					]}
+					
+			]
+	}
+	,{	"name":"旋转进入",
+		"name_eng":"Rotating entrances",
+		"data":[
+					{"name":"普通",
+					"name_eng":"rotateIn",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"-200"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0"}}
+					]}
+					,{"name":"左下",
+					"name_eng":"rotateInDownLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"-90","origin_x":"0","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0","origin_x":"0","origin_y":"100"}}
+					]}
+					,{"name":"右下",
+					"name_eng":"rotateInDownRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"90","origin_x":"100","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0","origin_x":"100","origin_y":"100"}}
+					]}
+					,{"name":"左上",
+					"name_eng":"rotateInUpLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"90","origin_x":"0","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0","origin_x":"0","origin_y":"100"}}
+					]}
+					,{"name":"右上",
+					"name_eng":"rotateInUpRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"-90","origin_x":"100","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0","origin_x":"100","origin_y":"100"}}
+					]}
+					
+			]
+	}
+	,{	"name":"旋转退出",
+		"name_eng":"Rotating exits",
+		"data":[
+					{"name":"普通",
+					"name_eng":"rotateOut",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"200"}}
+					]}
+					,{"name":"左下",
+					"name_eng":"rotateOutDownLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0","origin_x":"0","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"90","origin_x":"0","origin_y":"100"}}
+					]}
+					,{"name":"右下",
+					"name_eng":"rotateOutDownRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0","origin_x":"100","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"-90","origin_x":"100","origin_y":"100"}}
+					]}
+					,{"name":"左上",
+					"name_eng":"rotateOutUpLeft",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0","origin_x":"0","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"-90","origin_x":"0","origin_y":"100"}}
+					]}
+					,{"name":"右上",
+					"name_eng":"rotateOutUpRight",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0","origin_x":"100","origin_y":"100"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"90","origin_x":"100","origin_y":"100"}}
+					]}
+					
+			]
+	}
+	,{	"name":"特殊 ",
+		"name_eng":"Specials",
+		"data":[
+					{"name":"掉链子",
+					"name_eng":"hinge",
+					 "frame":[
+							{"time":0,		"style":{"rotate":"0","origin_x":"0","origin_y":"0"}},
+							{"time":0.2,	"style":{"rotate":"80","origin_x":"0","origin_y":"0"}},
+							{"time":0.4,	"style":{"rotate":"60","origin_x":"0","origin_y":"0"}},
+							{"time":0.6,	"style":{"rotate":"80","origin_x":"0","origin_y":"0"}},
+							{"time":0.8,	"style":{"rotate":"60","opacity":"1","origin_x":"0","origin_y":"0"}},
+							{"time":1,		"style":{"opacity":"0","translate_y":"700"}}
+					]}
+					,{"name":"滚入",
+					"name_eng":"rollIn",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"0","rotate":"-120","translate_x":"-200"}},
+							{"time":1,		"style":{"opacity":"1","rotate":"0","translate_x":"0"}}
+					]}
+					,{"name":"滚出",
+					"name_eng":"rollOut",
+					 "frame":[
+							{"time":0,		"style":{"opacity":"1","rotate":"0","translate_x":"0"}},
+							{"time":1,		"style":{"opacity":"0","rotate":"120","translate_x":"200"}}
+					]}
+				
+			]
+	}
+]
+
+

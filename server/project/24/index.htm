@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>太空</title>
+
+<style>
+/*reset css*/
+html {font-size: 62.5%;font-family: Tahoma;} /* Font sizing with rem http://snook.ca/archives/html_and_css/font-size-with-rem */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input,button, textarea, p, blockquote, th, td, hr {margin: 0;padding: 0;}
+body{line-height:1.333;font-size:12px;font-size:1.2rem;}
+h1, h2, h3, h4, h5, h6{font-size:100%}
+input, textarea, select,button{font-size: 12px;font-weight: normal;}
+input[type="button"],input[type="submit"], select,button{cursor:pointer;}
+table {border-collapse: collapse;border-spacing: 0;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+li {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;font-variant: normal;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+fieldset, img,a img, iframe {border-width:0;border-style:none;}
+iframe{overflow:hidden;}
+img{-ms-interpolation-mode: bicubic;}/* https://developer.mozilla.org/En/CSS/image-rendering */
+textarea{overflow-y:auto;}
+legend {color: #000;}
+
+/*测试使用*/
+body{background:#333}
+.mod_canvas{margin:20px auto;position:relative;}
+
+/*layer css*/
+.mod_canvas{background-position:center top;width:1600px;height:1000px;background-color:#000000;}
+.mod_canvas .layer_0{
+	position:absolute;left:800px;top:500px;background-size:100% 100%;background-image:url(../../project/24/fog.png);
+	-webkit-animation: frame_layer_0 30.33s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_0 30.33s infinite Linear;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:repeat-x 0 center;margin-top:-1000px;margin-left:-1000px;}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:2000px;height:2000px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:2000px;height:2000px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:800px;top:500px;background-size:100% 100%;background-image:url(../../project/24/fog.png);
+	-webkit-animation: frame_layer_1 122.94s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 122.94s infinite Linear;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:repeat-x 0 center;margin-top:-1000px;margin-left:-1000px;}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	5.9459899137791% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	5.9459899137791% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:806.6666666666666px;top:183.33333333333331px;background-size:100% 100%;background-image:url(../../project/24/glow.png);
+	-webkit-animation: frame_layer_2 5s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_2 5s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:800px;height:800px;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50.6% {width:800px;height:800px;opacity:0.75;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:800px;height:800px;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50.6% {width:800px;height:800px;opacity:0.75;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_3{
+	position:absolute;left:700px;top:300px;background-size:100% 100%;background-image:url(../../project/24/light.png);
+	-webkit-animation: frame_layer_3 1.03s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_3 1.03s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_3 {
+	0% {width:800px;height:800px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	51.456310679612% {width:800px;height:800px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_3 {
+	0% {width:800px;height:800px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	51.456310679612% {width:800px;height:800px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_4{
+	position:absolute;left:529px;top:158px;background-size:100% 100%;background-image:url(../../project/24/stars-large.png);
+	-webkit-animation: frame_layer_4 60s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_4 60s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_4 {
+	0% {width:600px;height:600px;origin_x:1;origin_y:1;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_4 {
+	0% {width:600px;height:600px;origin_x:1;origin_y:1;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_5{
+	position:absolute;left:500px;top:246px;background-size:100% 100%;background-image:url(../../project/24/stars-large.png);
+	-webkit-animation: frame_layer_5 45s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_5 45s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_5 {
+	0% {width:600px;height:600px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_5 {
+	0% {width:600px;height:600px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_6{
+	position:absolute;left:513px;top:134px;background-size:100% 100%;background-image:url(../../project/24/stars-small.png);
+	-webkit-animation: frame_layer_6 15s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_6 15s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_6 {
+	0% {width:600px;height:600px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_6 {
+	0% {width:600px;height:600px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_7{
+	position:absolute;left:504px;top:164px;background-size:100% 100%;background-image:url(../../project/24/stars-small.png);
+	-webkit-animation: frame_layer_7 30s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_7 30s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_7 {
+	0% {width:600px;height:600px;opacity:0.10;-webkit-transform:perspective(0px) translate(307px,12px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_7 {
+	0% {width:600px;height:600px;opacity:0.10;-moz-transform:perspective(0px) translate(307px,12px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="mod_canvas">
+	<div class="layer_0"></div>
+	<div class="layer_1"></div>
+	<div class="layer_2"></div>
+	<div class="layer_3"></div>
+	<div class="layer_4"></div>
+	<div class="layer_5"></div>
+	<div class="layer_6"></div>
+	<div class="layer_7"></div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.mod_canvas{background-position:center top;width:600px;height:600px;background-color:#fff;background-image:url(../../project/21//clockface.jpg)}
+.mod_canvas .layer_0{
+	position:absolute;left:282px;top:183px;background-size:100% 100%;background-image:url(../../project/21/hourhand.png);
+	-webkit-animation: frame_layer_0 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_0 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(8px,-189px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(53deg) ;}
+	100% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(8px,-189px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(53deg) ;}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:30px;height:600px;-moz-transform:perspective(0px) translate(8px,-189px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(53deg) ;}
+	100% {width:30px;height:600px;-moz-transform:perspective(0px) translate(8px,-189px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(53deg) ;}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:336px;top:205px;background-size:100% 100%;background-image:url(../../project/21/minhand.png);
+	-webkit-animation: frame_layer_1 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(-48px,-208px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-59deg) ;}
+	100% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(-48px,-208px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-59deg) ;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:30px;height:600px;-moz-transform:perspective(0px) translate(-48px,-208px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-59deg) ;}
+	100% {width:30px;height:600px;-moz-transform:perspective(0px) translate(-48px,-208px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-59deg) ;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:276px;top:-19px;background-size:100% 100%;background-image:url(../../project/21/sechand.png);
+	-webkit-animation: frame_layer_2 60s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_2 60s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(9px,12px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:30px;height:600px;-webkit-transform:perspective(0px) translate(9px,12px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:30px;height:600px;-moz-transform:perspective(0px) translate(9px,12px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:30px;height:600px;-moz-transform:perspective(0px) translate(9px,12px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}

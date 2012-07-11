@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="os_win7"><!--os_winXp,os_mac,os_vista,os_win7-->
+<head>
+	<meta charset="utf-8" />
+	<title>iAnimation</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script>
+var cgipath="server/index.php?";
+var id=location.href.split("?")[1]*1;
+
+$(document).ready(function(){
+	parent.frame_resize();
+	
+});
+</script>
+
+
+<div class="wrap page_project page_project_list">
+	<div class="frame_title">
+		<h3>帮助</h3>
+		<a id="_id_frame_close" class="ico ico_frame_close"></a>
+	</div>
+	<div class="mod_help">
+		<div class="inner">
+			1、新建项目<br />
+			2、拖拽图片至素材库<br />
+			3、从素材库拖拽图片到图板，创建图层<br />
+			4、双击图层对应的帧区域(有蓝色圆点<i class="frame_item "></i>的区域)，以创建帧<br />
+			5、调整各个帧下图层的样式<br />
+			6、预览<br />
+		</div>
+	</div>
+	
+	
+</div>
+</body>
+
+
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/project.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(){
+
+	if(parent.project_info.id.length==0)$('#_id_frame_close').hide();
+
+	parent.frame_resize();
+	$('#_id_frame_close').click(function(){
+		parent.frame_close();
+	});
+});
+
+</script>
+
+</html>

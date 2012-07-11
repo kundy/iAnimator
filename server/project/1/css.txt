@@ -1,0 +1,61 @@
+.mod_canvas{width:400px;height:300px;background-color:#e0c7e0;}
+.mod_canvas .layer_0{
+	position:absolute;left:85px;top:206px;background-size:100% 100%;background-image:url(../../project/1/colorpicker_submit.png);
+	-webkit-animation: frame_layer_0 1s 1;
+	-moz-animation: frame_layer_0 1s 1;
+
+}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	20% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	40% {width:22px;height:44px;-webkit-transform:translate(0px,-30px) scale(1,1) skew(0deg) rotate(0deg);}
+	50% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	60% {width:22px;height:44px;-webkit-transform:translate(0px,-15px) scale(1,1) skew(0deg) rotate(0deg);}
+	80% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	20% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	40% {width:22px;height:44px;-moz-transform:translate(0px,-30px) scale(1,1) skew(0deg) rotate(0deg);}
+	50% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	60% {width:22px;height:44px;-moz-transform:translate(0px,-15px) scale(1,1) skew(0deg) rotate(0deg);}
+	80% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:205px;top:128px;background-size:100% 100%;background-image:url(../../project/1/custom_hex.png);
+	-webkit-animation: frame_layer_1 1s infinite;
+	-moz-animation: frame_layer_1 1s infinite;
+
+}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:72px;height:44px;}
+	20% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(15deg);-webkit-transform-origin:50% 0%;}
+	40% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-10deg);-webkit-transform-origin:50% 0%;}
+	60% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(5deg);-webkit-transform-origin:50% 0%;}
+	80% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-5deg);-webkit-transform-origin:50% 0%;}
+	100% {width:72px;height:44px;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:72px;height:44px;}
+	20% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(15deg);-moz-transform-origin:50% 0%;}
+	40% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-10deg);-moz-transform-origin:50% 0%;}
+	60% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(5deg);-moz-transform-origin:50% 0%;}
+	80% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-5deg);-moz-transform-origin:50% 0%;}
+	100% {width:72px;height:44px;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:52px;top:208px;background-size:100% 100%;background-image:url(../../project/1/colorpicker_rgb_r.png);
+	-webkit-animation: frame_layer_2 2.97s infinite;
+	-moz-animation: frame_layer_2 2.97s infinite;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:62px;height:66px;-webkit-transform:translate(31px,-59px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:62px;height:66px;-webkit-transform:translate(175px,-40px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:62px;height:66px;-moz-transform:translate(31px,-59px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:62px;height:66px;-moz-transform:translate(175px,-40px) scale(1,1) skew(0deg) rotate(0deg);}
+}

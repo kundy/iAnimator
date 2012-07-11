@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New_Project2</title>
+
+<style>
+/*reset css*/
+html {font-size: 62.5%;font-family: Tahoma;} /* Font sizing with rem http://snook.ca/archives/html_and_css/font-size-with-rem */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input,button, textarea, p, blockquote, th, td, hr {margin: 0;padding: 0;}
+body{line-height:1.333;font-size:12px;font-size:1.2rem;}
+h1, h2, h3, h4, h5, h6{font-size:100%}
+input, textarea, select,button{font-size: 12px;font-weight: normal;}
+input[type="button"],input[type="submit"], select,button{cursor:pointer;}
+table {border-collapse: collapse;border-spacing: 0;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+li {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;font-variant: normal;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+fieldset, img,a img, iframe {border-width:0;border-style:none;}
+iframe{overflow:hidden;}
+img{-ms-interpolation-mode: bicubic;}/* https://developer.mozilla.org/En/CSS/image-rendering */
+textarea{overflow-y:auto;}
+legend {color: #000;}
+
+/*测试使用*/
+body{background:#fff}
+.mod_canvas{margin:20px auto;position:relative;}
+
+/*layer css*/
+.mod_canvas{width:400px;height:300px;background-color:#e0c7e0;}
+.mod_canvas .layer_0{
+	position:absolute;left:85px;top:206px;background-size:100% 100%;background-image:url(../../project/1/colorpicker_submit.png);
+	-webkit-animation: frame_layer_0 1s 1;
+	-moz-animation: frame_layer_0 1s 1;
+
+}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	20% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	40% {width:22px;height:44px;-webkit-transform:translate(0px,-30px) scale(1,1) skew(0deg) rotate(0deg);}
+	50% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	60% {width:22px;height:44px;-webkit-transform:translate(0px,-15px) scale(1,1) skew(0deg) rotate(0deg);}
+	80% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:22px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	20% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	40% {width:22px;height:44px;-moz-transform:translate(0px,-30px) scale(1,1) skew(0deg) rotate(0deg);}
+	50% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	60% {width:22px;height:44px;-moz-transform:translate(0px,-15px) scale(1,1) skew(0deg) rotate(0deg);}
+	80% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:22px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:205px;top:128px;background-size:100% 100%;background-image:url(../../project/1/custom_hex.png);
+	-webkit-animation: frame_layer_1 1s infinite;
+	-moz-animation: frame_layer_1 1s infinite;
+
+}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:72px;height:44px;}
+	20% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(15deg);-webkit-transform-origin:50% 0%;}
+	40% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-10deg);-webkit-transform-origin:50% 0%;}
+	60% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(5deg);-webkit-transform-origin:50% 0%;}
+	80% {width:72px;height:44px;-webkit-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-5deg);-webkit-transform-origin:50% 0%;}
+	100% {width:72px;height:44px;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:72px;height:44px;}
+	20% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(15deg);-moz-transform-origin:50% 0%;}
+	40% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-10deg);-moz-transform-origin:50% 0%;}
+	60% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(5deg);-moz-transform-origin:50% 0%;}
+	80% {width:72px;height:44px;-moz-transform:translate(0px,0px) scale(1,1) skew(0deg) rotate(-5deg);-moz-transform-origin:50% 0%;}
+	100% {width:72px;height:44px;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:52px;top:208px;background-size:100% 100%;background-image:url(../../project/1/colorpicker_rgb_r.png);
+	-webkit-animation: frame_layer_2 2.97s infinite;
+	-moz-animation: frame_layer_2 2.97s infinite;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:62px;height:66px;-webkit-transform:translate(31px,-59px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:62px;height:66px;-webkit-transform:translate(175px,-40px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:62px;height:66px;-moz-transform:translate(31px,-59px) scale(1,1) skew(0deg) rotate(0deg);}
+	100% {width:62px;height:66px;-moz-transform:translate(175px,-40px) scale(1,1) skew(0deg) rotate(0deg);}
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="mod_canvas">
+	<div class="layer_0"></div>
+	<div class="layer_1"></div>
+	<div class="layer_2"></div>
+</div>
+
+
+</body>
+</html>

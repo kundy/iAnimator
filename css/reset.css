@@ -1,0 +1,32 @@
+
+#CssGaga{background-image:none}
+
+html {font-size: 62.5%;font-family: Tahoma;} 
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input,button, textarea, p, blockquote, th, td, hr {margin: 0;padding: 0;}
+body{line-height:1.333;font-size:12px;font-size:1.2rem;}
+h1, h2, h3, h4, h5, h6{font-size:100%}
+input, textarea, select,button{font-size: 12px;font-weight: normal;}
+input[type="button"],input[type="submit"], select,button{cursor:pointer;}
+table {border-collapse: collapse;border-spacing: 0;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+li {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;font-variant: normal;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+fieldset, img,a img, iframe {border-width:0;border-style:none;}
+iframe{overflow:hidden;}
+img{-ms-interpolation-mode: bicubic;}
+textarea{overflow-y:auto;}
+legend {color: #000;}
+a:link,a:visited {text-decoration: none;}
+a{ cursor:pointer;}
+
+hr{height:0}
+label{cursor:pointer}
+
+.os_winXp{font-family:Tahoma;}
+.os_mac{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;}
+.os_vista,
+.os_win7{font-family:"Microsoft Yahei",Tahoma}

@@ -1,0 +1,3 @@
+<div class="mod_canvas">
+	<div class="layer_2"></div>
+</div>

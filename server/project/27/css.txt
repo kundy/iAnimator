@@ -1,0 +1,87 @@
+.mod_canvas{background-position:center top;width:1000px;height:400px;background-color:#fff;background-image:url(../../project/27//a_bg.jpg)}
+.mod_canvas .layer_5{
+	position:absolute;width:246px;height:67px;left:378px;top:247px;background-size:100% 100%;background-image:url(../../project/27/a4.png);
+	-webkit-animation: frame_layer_5 1s 1;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_5 1s 1;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_5 {
+	0% {opacity:0;width:246px;height:67px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.3,0.3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50% {opacity:1;width:246px;height:67px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.05,1.05) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	70% {opacity:1;width:246px;height:67px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.9,0.9) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {opacity:1;width:246px;height:67px;-webkit-transform:perspective(0px) translate(0px,-1px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_5 {
+	0% {opacity:0;width:246px;height:67px;-moz-transform: translate(0px,0px)  scale(0.3,0.3) skew(0deg)   rotate(0deg) ;}
+	50% {opacity:1;width:246px;height:67px;-moz-transform: translate(0px,0px)  scale(1.05,1.05) skew(0deg)   rotate(0deg) ;}
+	70% {opacity:1;width:246px;height:67px;-moz-transform: translate(0px,0px)  scale(0.9,0.9) skew(0deg)   rotate(0deg) ;}
+	100% {opacity:1;width:246px;height:67px;-moz-transform: translate(0px,-1px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+.mod_canvas .layer_7{
+	position:absolute;width:70px;height:97px;left:40px;top:5px;background-size:100% 100%;background-image:url(../../project/27/a1.png);
+	-webkit-animation: frame_layer_7 64.69s infinite Linear alternate;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_7 64.69s infinite Linear alternate;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_7 {
+	0% {width:70px;height:97px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:70px;height:97px;-webkit-transform:perspective(0px) translate(798px,9px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_7 {
+	0% {width:70px;height:97px;-moz-transform: translate(0px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+	100% {width:70px;height:97px;-moz-transform: translate(798px,9px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+.mod_canvas .layer_8{
+	position:absolute;width:291px;height:145px;left:383px;top:247px;background-size:100% 100%;background-image:url(../../project/27/a2.png);
+	-webkit-animation: frame_layer_8 1s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_8 1s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_8 {
+	0% {opacity:1;width:291px;height:145px;}
+	25% {opacity:0.5;width:291px;height:145px;}
+	50% {opacity:1;width:291px;height:145px;}
+	75% {opacity:0.5;width:291px;height:145px;}
+	100% {opacity:1;width:291px;height:145px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_8 {
+	0% {opacity:1;width:291px;height:145px;}
+	25% {opacity:0.5;width:291px;height:145px;}
+	50% {opacity:1;width:291px;height:145px;}
+	75% {opacity:0.5;width:291px;height:145px;}
+	100% {opacity:1;width:291px;height:145px;-moz-transform: translate(0px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+.mod_canvas .layer_9{
+	position:absolute;width:496px;height:76px;left:258px;top:314px;background-size:100% 100%;background-image:url(../../project/27/a3.png);
+	-webkit-animation: frame_layer_9 1s 1 1s;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_9 1s 1 1s;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_9 {
+	0% {opacity:0;width:496px;height:76px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.3,0.3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50% {opacity:1;width:496px;height:76px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.05,1.05) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	70% {opacity:1;width:496px;height:76px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.9,0.9) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {opacity:1;width:496px;height:76px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_9 {
+	0% {opacity:0;width:496px;height:76px;-moz-transform: translate(0px,0px)  scale(0.3,0.3) skew(0deg)   rotate(0deg) ;}
+	50% {opacity:1;width:496px;height:76px;-moz-transform: translate(0px,0px)  scale(1.05,1.05) skew(0deg)   rotate(0deg) ;}
+	70% {opacity:1;width:496px;height:76px;-moz-transform: translate(0px,0px)  scale(0.9,0.9) skew(0deg)   rotate(0deg) ;}
+	100% {opacity:1;width:496px;height:76px;-moz-transform: translate(0px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+.mod_canvas .layer_10{
+	position:absolute;width:85px;height:57px;left:463px;top:192px;background-size:100% 100%;background-image:url(../../project/27/a5.png);
+	-webkit-animation: frame_layer_10 1s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_10 1s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_10 {
+	0% {width:85px;height:57px;}
+	50% {width:85px;height:57px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1.1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:85px;height:57px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_10 {
+	0% {width:85px;height:57px;}
+	50% {width:85px;height:57px;-moz-transform: translate(0px,0px)  scale(1.1,1.1) skew(0deg)   rotate(0deg) ;}
+	100% {width:85px;height:57px;-moz-transform: translate(0px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}

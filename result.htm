@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="os_win7"><!--os_winXp,os_mac,os_vista,os_win7-->
+<head>
+	<meta charset="utf-8" />
+	<title>iAnimation</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrap">
+	
+	<div id="mod_result" class="mod_result">
+	
+		<div class="frame_title">
+			<h3>预览页面</h3>
+			<a id="_id_frame_close" class="ico ico_frame_close"></a>
+		</div>
+		
+		<div class="tab_area" id="tab_area">
+			<div class="inner clearfix">
+				<a id="tab_demo" class="current">示例</a>
+				<a id="tab_html" >HTML代码</a>
+				<a id="tab_css" >CSS代码</a>
+			</div>
+		</div>
+		
+		<a id="demo_new" target="_blank">新窗口打开</a>
+		<div id="tab_ct" class="tabcon">
+			<div style="display: block; " id="ct_demo">
+				<iframe class="result_iframe" id="result_iframe" scrolling="no" frameborder="no" width="100%" src=""></iframe>
+			</div>
+			<div style="display: none; " id="ct_html">
+				<textarea class="code_ct" id="html_ct"></textarea>
+				<a id="copy_html" class="btn btn_blue">复制</a>
+			</div>
+			<div style="display: none; " id="ct_css">
+				<textarea class="code_ct" id="css_ct"></textarea>
+				<a id="copy_css" class="btn btn_blue">复制</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+</div>
+</body>
+
+
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/ZeroClipboard.js" type="text/javascript"></script>
+<script>
+var cgipath="server/index.php?";
+var id=location.href.split("?")[1]*1;
+
+$(document).ready(function(){
+	parent.frame_resize();
+	
+	 $("#tab_area a").click(function(){
+		$(".zeroClipboard").remove();
+		 $("#tab_area a").removeClass('current');
+		 $(this).addClass('current');
+		 var tab_flag=$(this).attr("id").replace("tab_","ct_")
+		 $("#tab_ct div").hide();
+		 $("#tab_ct #"+tab_flag).show();
+		 parent.frame_resize();
+	 });
+	 $('#_id_frame_close').click(function(){
+		parent.frame_close();
+	});
+	 
+	var data_area=[];
+	data_area.push([ "id" , id ]);
+	var data_str=requestToString(data_area);
+	$.ajax({
+			url:cgipath + 'project-readInfo',type:'POST',data:data_str,dataType:'json',timeout: ajax_timeout,error:function () {},
+			success:function(feedback){
+				if(feedback.ret=="0"){
+					$("#demo_new").attr("href","server/"+feedback.src);
+					$("#result_iframe").attr('src',"server/"+feedback.src);
+					$("#html_ct").val(feedback.html);
+					$("#css_ct").val(feedback.css);
+					$("#copy_html").mouseover(function(){
+						copy_clip('copy_html',feedback.html);
+					});
+					$("#copy_css").mouseover(function(){
+						copy_clip('copy_css',feedback.css);
+					});
+				}
+				else{
+					
+				}
+			}
+		});
+	
+	
+	
+});
+
+function requestToString(data_area) {
+	var ret = "";
+	for (var i = 0; i < data_area.length; i++) {
+		ret += "&" + data_area[i][0];
+		ret += "=" + encodeURIComponent(data_area[i][1]);
+	}
+	ret += "&rand=" + Math.round((Math.random() * 1000000));
+	return ret;
+}
+function ajax_timeout(){}
+
+//<a id="copy_area" onmouseover="functions.copy_clip('copy_area','abcd');" href="javascript:void(0)">复制</a>
+function copy_clip(input_id,copy_content){
+	ZeroClipboard.setMoviePath("js/ZeroClipboard.swf");
+	var clip = new ZeroClipboard.Client(); // 新建一个对象
+	clip.setHandCursor(true); // 设置鼠标为手型
+	clip.setText(copy_content);
+	clip.glue(input_id);
+	clip.addEventListener("complete",function(){
+		message.show("message_div","提示","已复制到剪贴板！",3)
+	});
+}
+
+
+
+
+/******************************
+ **********弹框组件**********
+ _obj_id:弹框div，已废除
+ _title:标题
+ _content:内容
+ _type:弹框类型
+ 1确认按钮
+ 2确认+取消按钮
+ 3 无按钮，成功提示，自动消失
+ 4 无按钮，失败提示，自动消失
+ 5 无按钮，警告提示，自动消失
+
+ _width:弹框宽度
+ _callback:确定按钮回调函数(字符串)
+
+ 示例
+ message.show("message_div","提示","确实要删除吗？",2,"","project.del(123);")
+
+ ******************************/
+var message = {
+    obj_id:"message_div",
+    title:"提示",
+    content:"无内容",
+    type:1,
+    width:376,
+    callback:"message.close();",
+
+    //默认显示对话框
+    show:function (_obj_id, _title, _content, _type, _width, _callback) {
+        this.obj_id = _obj_id || "message_div";
+        this.title = _title || "提示";
+        this.content = _content || "无内容";
+        this.type = _type || 1;
+        this.width = _width || 376;
+        this.callback = _callback + ";message.close()";
+        //this.callback += ";message.close();";
+
+
+        var ret = "<div id=\"qam_message_area\">";
+
+        if (this.type == 1 || this.type == 2) {
+            ret += "<div class=\"qam_message_mask\"></div>";//遮罩层
+            ret += "<div id=\"qam_popup_box\" class=\"qam_popup\" style=\"width:" + this.width + "px;margin-left:-" + this.width / 2 + "px;\"><div class=\"qam_popup_inner\">";
+            ret += "<div class=\"qam_popup_hd\"><div class=\"qam_popup_hd_inner\"><h3>" + this.title + "</h3><a href=\"javascript:void(0)\" onclick=\"message.close()\" class=\"ico_x\"></a></div></div>";
+            ret += "<div class=\"qam_popup_bd\">" + this.content + "</div>";
+            ret += "<div class=\"qam_popup_ft\"><div class=\"global_tip_button\">";
+            if (this.type == 1 || this.type == 2)ret += "<a class=\"bt_tip_hit\" title=\"确定\" href=\"javascript:void(0)\" onclick=\"" + this.callback + "\">确定</a>";
+            if (this.type == 2)ret += "<a class=\"bt_tip_normal\" title=\"取消\" href=\"javascript:void(0)\" onclick=\"message.close()\">取消</a>";
+            ret += "</div></div></div></div>";
+        }
+        else if (this.type == 3 || this.type == 4 || this.type == 5) {
+            ret += "<div id=\"qam_msgbox\" class=\"qam_msgbox_layer_wrap\"><span class=\"qam_msgbox_layer\">";
+            if (this.type == 3)ret += "<span class=\"gtl_ico_succ\"></span>";
+            else if (this.type == 4)ret += "<span class=\"gtl_ico_fail\"></span>";
+            else if (this.type == 5)ret += "<span class=\"gtl_ico_hits\"></span>";
+            ret += this.content;
+            ret += "<span class=\"gtl_end\"></span></span></div>";
+        }
+        ret += "</div>";
+
+        if (typeof($("#qam_message_area") == "object")) {
+            $("#qam_message_area").remove();
+        }
+
+        $(document.body).append(ret);
+
+        if (this.type == 1 || this.type == 2) {
+            $("#qam_popup_box").css("top", $(window).height() / 2 + $(parent).scrollTop() - 100);
+        }
+        else if (this.type == 3 || this.type == 4 || this.type == 5) {
+            setTimeout(function () {
+                eval(message.callback);
+            }, 1500);
+        }
+
+    },
+
+    close:function () {
+        $("#qam_message_area").remove();
+    }
+
+}
+</script>
+
+
+
+
+</html>

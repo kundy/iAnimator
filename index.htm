@@ -1,0 +1,578 @@
+<!doctype html>
+<html class="os_win7"><!--os_winXp,os_mac,os_vista,os_win7-->
+<head>
+	<meta charset="utf-8" />
+	<title>iAnimator</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/skins/black.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body >
+
+<div class="wrap">
+	<div class="wrap_inner clearfix">
+		<!-- 菜单  start-->
+		<div class="black" id="mod_nav">  
+			<ul id="mega-menu-2" class="mega-menu">
+				<li>
+					<a href="#">项目</a>
+					<ul>
+						<li><a href="javascript:" id="nav_project_add">新建项目</a></li>
+						<li><a href="javascript:" id="nav_project_list">项目列表</a></li>
+						<li><a href="javascript:" id="nav_project_save">保存项目</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#">操作</a>
+					<ul>
+						<li><a href="javascript:" id="nav_option_coordinate">隐藏坐标</a></li>
+						<li><a href="javascript:" id="nav_option_scenes">显示场景</a></li>
+						<li><a href="javascript:" id="nav_option_del_frame">删除帧</a></li>
+						<li><a href="javascript:" id="nav_option_del_layer">删除图层</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">帮助</a>
+					<ul>	
+						<li><a href="javascript:" id="nav_help_help">帮助</a></li>
+						<li><a href="javascript:" id="nav_help_about">关于</a></li>
+						<li><a href="javascript:" id="nav_help_skill">小技巧</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:" id="nav_page_preview">预览页面</a></li>
+			</ul>
+		</div>	
+		<!-- 菜单  end-->
+		
+		<!-- 左列 基准元素  start-->
+		<div class="side_left">
+			<ul class="element_list" style="display:none">
+				<li class="current"><a id="element_select" class="ico ico_element_select"></a></li>
+				<li><a id="element_rect" class="ico ico_element_rect"></a></li>
+				<li><a id="element_circle" class="ico ico_element_circle"></a></li>
+				<li><a id="element_text" class="ico ico_element_text"></a></li>
+				<li><a id="element_image" class="ico ico_element_image"></a></li>
+			<ul>
+		</div>
+		<!-- 左列 基准元素  end-->
+		
+		<!-- 右列 属性、库面板  start-->
+		<div class="side_right" id="side_right">
+			<div class="tab_area" id="tab_area">
+				<div class="inner clearfix">
+					<a id="btn_lib" class="current">素材库</a>
+					<a id="btn_property">属性</a>
+					<a id="btn_effect">特效</a>
+				</div>
+			</div>
+			
+			<div id="tab_lib" class="side_tab" >
+				<div class="inner">
+					<div class="lib_list clear" id="lib_list"></div>
+					
+				</div>
+			</div>
+			<p class="upload_file_watermark" id="upload_file_watermark"></p>
+			
+			<div id="tab_property" class="side_tab" style="display:none">
+				<div class="property_block" id="property_project">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>项目（Project）</div>
+						<div class="bd"  style="height:250px;">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">尺寸：</span></div>
+								<div class="content">
+									<span class="text">宽：</span>
+									<input class="value" id="_p_canvas_width" value="" /><span class="unit">px</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高：</span>
+									<input class="value"  id="_p_canvas_height" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">背景色：</div>
+								<div class="content">
+									<span id="_p_canvas_bg_show" class="color_block"></span>
+									<input class="value"  id="_p_canvas_bg" value="#FFFFFF" style="width:50px;text-align:left;" />
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">背景图片：</div>
+								<div class="content">
+									<span id="_p_canvas_bg_img"></span><a id="canvas_bg_del" class="canvas_bg_del" >删除</a>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">作者：</div>
+								<div class="content">
+									<span class="text"  id="_p_project_author" style="width:50px;text-align:left;" >kundy</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">创建时间：</div>
+								<div class="content">
+									<span class="text"  id="_p_project_time_create" style="width:120px;text-align:left;" ></span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">修改时间：</div>
+								<div class="content">
+									<span class="text"  id="_p_project_time_save" style="width:120px;text-align:left;" ></span>
+								</div>
+							</div>
+							<!--
+							<div class="property_item clearfix">
+								<div class="title">描述：</div>
+								<div class="content">
+									<textarea class="textarea" id="_p_project_desc"></textarea>
+								</div>
+							</div>
+							-->
+							
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_layer">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>图层（Layer）</div>
+						<div class="bd">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">ID：</span></div>
+								<div class="content">
+									<span  id="_p_layer_id" style="width:100%;text-align:left;" ></span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">名称：</span></div>
+								<div class="content">
+									<input class="value" id="_p_layer_name" value="" style="width:100%;text-align:left;" />
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">自定义样式</div>
+								<div class="content">
+									<textarea class="textarea" id="_p_layer_custom" style="width:200px;min-height:50px;"></textarea>
+								</div>
+							</div>
+							<!--<div class="property_item clearfix">
+								<div class="title">内容：</div>
+								<div class="content">
+									<textarea class="textarea" id="_p_layer_content"></textarea>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_animation">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>动画（Animation）</div>
+						<div class="bd" style="height:98px;">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">重复：</span></div>
+								<div class="content">
+									<input class="value" id="_p_animation_iteration" value="" style="width:60px;" /><span class="unit">次</span>
+									<a id="_p_animation_iteration_set" title="无限次" class="unit2">(infinite)</a>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">变化率：</div>
+								<div class="content">
+									<div class="jsSelect clearfix" id="animation_time_function">
+										<span class="ico ico_select">▼</span>
+										<div class="select_show" style="width:100px;"  id="_p_animation_time_function">&nbsp;</div>
+										<ul class="select_content" style="width:120px;" id="select_content_animation_time_function">
+											<li>Ease</li>
+											<li>Linear</li>
+											<li>Ease-in</li>
+											<li>Ease-out</li>
+											<li>Ease-in-out</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">循环方向：</div>
+								<div class="content">
+									<div class="jsSelect clearfix" id="animation_direction">
+										<span class="ico ico_select">▼</span>
+										<div class="select_show" style="width:100px;"  id="_p_animation_direction">&nbsp;</div>
+										<ul class="select_content" style="width:120px;" id="select_content_animation_direction">
+											<li title="正常方向">normal</li>
+											<li title="正常与反向交替">alternate</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_frame">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>帧（Frame）</div>
+						<div class="bd" style="height:68px;">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">时间：</span></div>
+								<div class="content">
+									<input class="value" id="_p_frame_time" value="" /><span class="unit">秒</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">透明：</span></div>
+								<div class="content">
+									<input class="value" id="_p_object_opacity" value="" /><span class="unit">%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_transform">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>变形（Transforms）</div>
+						<div class="bd">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="left=10px;top:15px;【注意：坐标会影响当前图层所有帧的位置】">坐标：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_x" value="" /><span class="unit">px</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value"  id="_p_object_y" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:translate(10px 20px);【注意：只会影响当前图层当前所选帧的位置】">位移：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_translate_x" value="" /><span class="unit">px</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value"  id="_p_object_translate_y" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:translate(10px 20px);【注意：只会影响当前图层当前所选帧的位置】">位移：</span></div>
+								<div class="content">
+									<span class="text">Z：</span>
+									<input class="value" id="_p_object_translate_z" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="width:50px;height:50px;">宽高：</span></div>
+								<div class="content">
+									<span class="text">W：</span>
+									<input class="value" id="_p_object_width" value="" /><span class="unit">px</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;H：</span>
+									<input class="value"  id="_p_object_height" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:rotate(90deg)">旋转：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_rotate_x" value="" /><span class="unit">deg</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value" id="_p_object_rotate_y" value="" /><span class="unit">deg</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:rotate(90deg)">旋转：</span></div>
+								<div class="content">
+									<span class="text">Z：</span>
+									<input class="value" id="_p_object_rotate" value="" /><span class="unit">deg</span>
+								</div>
+							</div>
+							<!--<div class="property_item clearfix">
+								<div class="title"><span class="text">3D旋转：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_rotate_x" value="0" /><span class="unit">deg</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value"  id="_p_object_rotate_y" value="0" /><span class="unit">deg</span>
+								</div>
+							</div>-->
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:skew(10deg)">倾斜：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_skew" value="" /><span class="unit">deg</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="">旋转位置：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_transform_origin_x" value="" /><span class="unit">%</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value"  id="_p_object_transform_origin_y" value="" /><span class="unit">%</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">缩放：</span></div>
+								<div class="content">
+									<span class="text">X：</span>
+									<input class="value" id="_p_object_scale_x" value="" /><span class="unit">%</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y：</span>
+									<input class="value"  id="_p_object_scale_y" value="" /><span class="unit">%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_transform">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>3D变形（Transforms）</div>
+						<div class="bd">
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:translate(10px 20px);【注意：只会影响当前图层当前所选帧的位置】">位移：</span></div>
+								<div class="content">
+									<span class="text">Z：</span>
+									<input class="value" id="_p_object_translate_z" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:rotate(90deg)">旋转：</span></div>
+								<div class="content">
+									<span class="text">Z：</span>
+									<input class="value" id="_p_object_rotate" value="" /><span class="unit">deg</span>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text" title="transform:skew(10deg)">景深：</span></div>
+								<div class="content">
+									<span class="text">Z：</span>
+									<input class="value" id="_p_object_perspective" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="property_block" id="property_background">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>背景（Background）</div>
+						<div class="bd">
+							<div class="property_item clearfix">
+								<div class="title">背景色：</div>
+								<div class="content">
+									<span id="_p_object_bg" class="color_block"></span>
+									<input class="value"  id="_p_object_bg_color" value="#FFFFFF" style="width:50px;text-align:left;" />
+								</div>
+							</div>
+							
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">渐变：</span></div>
+								<div class="content">
+									
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">图片：</span></div>
+								<div class="content">
+									<input class="value" id="_p_canvas_width" value="0" />
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">平铺：</span></div>
+								<div class="content">
+									
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">滚动：</span></div>
+								<div class="content">
+									
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">阴影：</span></div>
+								<div class="content">
+									
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title"><span class="text">倒影：</span></div>
+								<div class="content">
+									<span class="text">Size：</span>
+									<input class="value" id="_p_canvas_width" value="0" /><span class="unit">%</span>
+									<span class="text">&nbsp;&nbsp;&nbsp;Pad：</span>
+									<input class="value"  id="_p_canvas_height" value="0" /><span class="unit">px</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				-->
+				<div class="property_block" id="property_border">
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>边框（Border）</div>
+						<div class="bd" style="height:68px;" style="height:107px;">
+							<div class="property_item clearfix">
+								<div class="title">边框：</div>
+								<div class="content" id="border_ct" style="display:none;">
+									<span id="_p_object_border_color_show" class="color_block" style="background:#00A5FF;"></span>
+									<input class="value"  id="_p_object_border_color" value="#00A5FF" style="width:50px;text-align:left;" />
+									<input class="value"  id="_p_object_border_width" value="1" style="width:15px;text-align:left;" /><span class="unit">px</span>
+									<div class="jsSelect clearfix" id="border_radius_type">
+										<span class="ico ico_select">▼</span>
+										<div class="select_show" style="width:100px;"  id="_p_border_type">none</div>
+										<ul class="select_content" style="width:120px;" id="select_content_border">
+											<li>none</li>
+											<li><i class="ico_border_type_solid"></i></li>
+											<li><i class="ico_border_type_dashed "></i></li>
+											<li><i class="ico_border_type_dotted "></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="property_item clearfix">
+								<div class="title">圆角：</div>
+								<div class="content">
+									<input class="value" id="_p_object_border_radius" value="" /><span class="unit">px</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="property_block" id="property_custom" >
+					<div class="inner">
+						<div class="hd"><span class="ico_trian">▼</span>帧自定义样式（Custom）</div>
+						<div class="bd">
+							<div class="property_item clearfix">
+								<div class="title">样式：</div>
+								<div class="content">
+									<textarea class="textarea" id="_p_object_custom" style="width:200px;min-height:100px;"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="tab_effect" class="side_tab" style="display:none">
+				<div class="inner">
+					<div class="effect_list clear" id="effect_list"></div>
+				</div>
+			</div>
+			
+			<div class="rabbish_area" id="rabbish_area"></div>
+			
+		</div>
+		<!-- 右列 属性、库面板  end-->
+		
+		<div class="main">
+			<!-- 时间轴 -->
+			<div class="timeline_area">
+				<!-- 时间轴 层标示-->
+				<div class="timeline_ct clearfix">
+					<div class="timeline_layer">
+						<div class="layer_option">
+							<a href="javascript:" id="" class="ico ico_lock"></a>
+							<a href="javascript:" id="" class="ico ico_eye"></a>
+						</div>
+						<div class="layer_area c_scroll_tiny" id="layer_area">
+							<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+							<div class="viewport">
+								<div class="overview">
+									<ul class="layer_list" id="layer_list"></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--帧区-->
+				<div class="frame_area c_scroll_tiny_x" id="frame_area">
+					<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+					<div class="viewport">
+						<div class="overview">
+							<ul class="time_mark clearfix"></ul><!--时间刻度-->
+							<div class="time_line" style="left:0px;" id="time_line"><!--时间线-->
+								<a class="ico ico_needle"></a>
+								<i class="ico ico_line"></i>
+							</div>
+							
+							<div class="frame_layer_area " id="frame_layer_area">
+										<div class="frame_layer" id="frame_layer"></div><!--帧_层-->
+							</div>
+						</div>
+					</div>	
+				</div>
+
+				<!--播控按钮-->
+				<div class="frame_play">
+					<div class="inner">
+						<div class="rabbish_area rabbish_layer_area" id="rabbish_layer_area"></div>
+						<div class="control_area">
+							<a class="ico ico_play" id="control_play" title="播放"></a>
+							<a class="ico ico_pause" id="control_pause" title="暂停"></a>
+							<a class="ico ico_stop" id="control_stop" title="停止"></a>
+							<!--<a class="ico ico_loop" id="control_loop" title="循环"></a>-->
+						</div>
+						<div class="zoom_area">
+							<a href="javascript:" class="ico ico_zoom"></a>
+							<a href="javascript:" class="ico ico_zoom_in"></a>
+							<span href="javascript:" class="ico ico_zoom_bar"><a href="javascript:" class="ico ico_anchor" id="ico_anchor" style="left:-3px"></a></span>
+							<a href="javascript:" class="ico ico_zoom_out"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 画布 -->
+			<div class="mod_animator_canvas" id="mod_animator_canvas">
+				<div class="canvas_box">
+					<div class="canvas_area">
+						<ul class="coordinate_x clearfix"></ul>
+						<ul class="coordinate_y clearfix"></ul>
+						<div class="canvas_range" id="canvas_range" style="width:400px;height:300px;"></div>
+						<style id="canvas_animation_style"></style>
+					</div>
+					<div class="canvas_bg_set canvas_bg_set_hover" id="canvas_bg_set">设置为背景图片</div>
+					<div class="canvas_zoom_area clearfix">
+						<a id="canvas_zoom_in">-</a>
+						<a id="canvas_zoom_num" title="恢复">100%</a>
+						<a id="canvas_zoom_out">+</a>
+					</div>
+				</div>
+			</div>
+			<!-- 场景 -->
+			<div class="scenes_area">
+			
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	
+</div>
+
+<div class="tip_skill" id="tip_skill">
+	<div class="inner">
+		<div class="skill_content"></div>
+		<a id="tip_close" class="tip_close"></a>
+		<a id="tip_next" class="tip_next"></a>
+	</div>
+</div>
+
+<div class="frame_window_area">
+	<div id="frame_window" class="frame_window" style="display:;">
+		<iframe class="app_canvas_frame" id="app_canvas_frame" scrolling="no" frameborder="no" width="100%" src="_blank.htm"></iframe>
+	</div>
+</div>
+	
+
+</body>
+
+
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.js" ></script>
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+<script type='text/javascript' src='js/jquery.masonry.min.js'></script>
+<script type="text/javascript" src="js/colorpicker.js" ></script>
+<script type="text/javascript" src="js/drag.js" ></script>
+<script type="text/javascript" src="js/main.js" ></script>
+
+
+
+</html>

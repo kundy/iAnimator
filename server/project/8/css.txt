@@ -1,0 +1,83 @@
+.mod_canvas{background-position:center top;width:1144px;height:280px;background-color:#fff;background-image:url(../../project/8//header2.jpg)}
+.mod_canvas .layer_13{
+	position:absolute;left:0px;top:-1px;background-size:100% 100%;background-image:url(../../project/8/light.png);
+	-webkit-animation: frame_layer_13 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_13 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_13 {
+	0% {opacity:1;width:1144px;height:280px;}
+	25% {opacity:0.5;width:1144px;height:280px;}
+	50% {opacity:1;width:1144px;height:280px;}
+	75% {opacity:0.5;width:1144px;height:280px;}
+	100% {opacity:1;width:1144px;height:280px;}
+}
+@-moz-keyframes frame_layer_13 {
+	0% {opacity:1;width:1144px;height:280px;}
+	25% {opacity:0.5;width:1144px;height:280px;}
+	50% {opacity:1;width:1144px;height:280px;}
+	75% {opacity:0.5;width:1144px;height:280px;}
+	100% {opacity:1;width:1144px;height:280px;}
+}
+.mod_canvas .layer_14{
+	position:absolute;left:2px;top:-1px;background-size:100% 100%;background-image:url(../../project/8/canvas_01.png);
+	-webkit-animation: frame_layer_14 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_14 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_14 {
+	0% {width:1144px;height:280px;-webkit-transform:perspective(0px) translate(-4px,1px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:1144px;height:280px;-webkit-transform:perspective(0px) translate(-4px,1px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_14 {
+	0% {width:1144px;height:280px;-moz-transform: translate(-4px,1px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+	100% {width:1144px;height:280px;-moz-transform: translate(-4px,1px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+.mod_canvas .layer_18{
+	position:absolute;left:0px;top:-1px;background-size:100% 100%;background-image:url(../../project/8/canvas.png);
+	-webkit-animation: frame_layer_18 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_18 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_18 {
+	0% {width:1144px;height:299px;}
+	100% {width:1144px;height:299px;}
+}
+@-moz-keyframes frame_layer_18 {
+	0% {width:1144px;height:299px;}
+	100% {width:1144px;height:299px;}
+}
+.mod_canvas .layer_19{
+	position:absolute;left:561px;top:22px;background-size:100% 100%;background-image:url(../../project/8/a_slogan.png);
+	-webkit-animation: frame_layer_19 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_19 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_19 {
+	0% {width:119px;height:86px;}
+	50% {width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1.1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:119px;height:86px;}
+}
+@-moz-keyframes frame_layer_19 {
+	0% {width:119px;height:86px;}
+	50% {width:119px;height:86px;-moz-transform: translate(0px,0px)  scale(1.1,1.1) skew(0deg)   rotate(0deg) ;}
+	100% {width:119px;height:86px;}
+}
+.mod_canvas .layer_20{
+	position:absolute;left:286px;top:331px;background-size:100% 100%;background-image:url(../../project/8/a_slogan.png);
+	-webkit-animation: frame_layer_20 1s 1;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_20 1s 1;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_20 {
+	0% {opacity:0;width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.3,0.3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50% {opacity:1;width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.05,1.05) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	70% {opacity:1;width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.9,0.9) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {opacity:1;width:119px;height:86px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_20 {
+	0% {opacity:0;width:119px;height:86px;-moz-transform: translate(0px,0px)  scale(0.3,0.3) skew(0deg)   rotate(0deg) ;}
+	50% {opacity:1;width:119px;height:86px;-moz-transform: translate(0px,0px)  scale(1.05,1.05) skew(0deg)   rotate(0deg) ;}
+	70% {opacity:1;width:119px;height:86px;-moz-transform: translate(0px,0px)  scale(0.9,0.9) skew(0deg)   rotate(0deg) ;}
+	100% {opacity:1;width:119px;height:86px;-moz-transform: translate(0px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}

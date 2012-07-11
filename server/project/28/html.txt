@@ -1,0 +1,5 @@
+<div class="mod_canvas">
+	<div class="layer_6"></div>
+	<div class="layer_7"></div>
+	<div class="layer_8"></div>
+</div>

@@ -1,0 +1,25 @@
+.mod_canvas{width:400px;height:300px;background-color:#fff;}
+.mod_canvas .layer_3{
+	position:absolute;left:264px;top:181px;background-size:100% 100%;background-image:url(../../project/3/content-close-24.png);
+	-webkit-animation: frame_layer_3 1.25s 1 Linear 0.84s;
+	-moz-animation: frame_layer_3 1.25s 1 Linear 0.84s;
+
+}
+@-webkit-keyframes frame_layer_3 {
+	0% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	12% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	23.2% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	36% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	54.4% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	78.4% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	100% {width:84px;height:58px;-webkit-transform:perspective(0px) translate(-47px,-104px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_3 {
+	0% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	12% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	23.2% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	36% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	54.4% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-3deg) ;}
+	78.4% {width:84px;height:58px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1.1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(3deg) ;}
+	100% {width:84px;height:58px;-moz-transform:perspective(0px) translate(-47px,-104px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}

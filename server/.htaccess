@@ -1,0 +1,22 @@
+
+#魔术开关
+php_flag register_globals off
+php_flag magic_quotes_gpc off
+
+
+#自定义错误页面
+#ErrorDocument 404 /qam/404.htm
+
+
+#变更默认首页
+#DirectoryIndex index.htm
+
+
+#IP禁止
+Order allow,deny
+#Deny from 123.45.67.8
+#Deny from 123.123.7
+Allow from all
+
+#伪静态
+

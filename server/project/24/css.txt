@@ -1,0 +1,119 @@
+.mod_canvas{background-position:center top;width:1600px;height:1000px;background-color:#000000;}
+.mod_canvas .layer_0{
+	position:absolute;left:800px;top:500px;background-size:100% 100%;background-image:url(../../project/24/fog.png);
+	-webkit-animation: frame_layer_0 30.33s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_0 30.33s infinite Linear;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:repeat-x 0 center;margin-top:-1000px;margin-left:-1000px;}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:2000px;height:2000px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:2000px;height:2000px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:800px;top:500px;background-size:100% 100%;background-image:url(../../project/24/fog.png);
+	-webkit-animation: frame_layer_1 122.94s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 122.94s infinite Linear;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:repeat-x 0 center;margin-top:-1000px;margin-left:-1000px;}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	5.9459899137791% {width:2000px;height:2000px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	5.9459899137791% {width:2000px;height:2000px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:806.6666666666666px;top:183.33333333333331px;background-size:100% 100%;background-image:url(../../project/24/glow.png);
+	-webkit-animation: frame_layer_2 5s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_2 5s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:800px;height:800px;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50.6% {width:800px;height:800px;opacity:0.75;-webkit-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:800px;height:800px;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	50.6% {width:800px;height:800px;opacity:0.75;-moz-transform:perspective(0px) translate(-386px,-119px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_3{
+	position:absolute;left:700px;top:300px;background-size:100% 100%;background-image:url(../../project/24/light.png);
+	-webkit-animation: frame_layer_3 1.03s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_3 1.03s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_3 {
+	0% {width:800px;height:800px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	51.456310679612% {width:800px;height:800px;opacity:0.50;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_3 {
+	0% {width:800px;height:800px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	51.456310679612% {width:800px;height:800px;opacity:0.50;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:800px;height:800px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_4{
+	position:absolute;left:529px;top:158px;background-size:100% 100%;background-image:url(../../project/24/stars-large.png);
+	-webkit-animation: frame_layer_4 60s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_4 60s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_4 {
+	0% {width:600px;height:600px;origin_x:1;origin_y:1;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_4 {
+	0% {width:600px;height:600px;origin_x:1;origin_y:1;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_5{
+	position:absolute;left:500px;top:246px;background-size:100% 100%;background-image:url(../../project/24/stars-large.png);
+	-webkit-animation: frame_layer_5 45s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_5 45s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_5 {
+	0% {width:600px;height:600px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_5 {
+	0% {width:600px;height:600px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(180deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+.mod_canvas .layer_6{
+	position:absolute;left:513px;top:134px;background-size:100% 100%;background-image:url(../../project/24/stars-small.png);
+	-webkit-animation: frame_layer_6 15s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_6 15s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_6 {
+	0% {width:600px;height:600px;opacity:0.25;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_6 {
+	0% {width:600px;height:600px;opacity:0.25;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_7{
+	position:absolute;left:504px;top:164px;background-size:100% 100%;background-image:url(../../project/24/stars-small.png);
+	-webkit-animation: frame_layer_7 30s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_7 30s infinite;-moz-animation-fill-mode:both;
+
+background-size:auto;background-repeat:no-repeat;}
+@-webkit-keyframes frame_layer_7 {
+	0% {width:600px;height:600px;opacity:0.10;-webkit-transform:perspective(0px) translate(307px,12px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}
+@-moz-keyframes frame_layer_7 {
+	0% {width:600px;height:600px;opacity:0.10;-moz-transform:perspective(0px) translate(307px,12px) translateZ(0px) scale(3,3) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:600px;height:600px;opacity:0.00;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(0.5,0.5) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(360deg) ;}
+}

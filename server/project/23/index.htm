@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>可口可乐</title>
+
+<style>
+/*reset css*/
+html {font-size: 62.5%;font-family: Tahoma;} /* Font sizing with rem http://snook.ca/archives/html_and_css/font-size-with-rem */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input,button, textarea, p, blockquote, th, td, hr {margin: 0;padding: 0;}
+body{line-height:1.333;font-size:12px;font-size:1.2rem;}
+h1, h2, h3, h4, h5, h6{font-size:100%}
+input, textarea, select,button{font-size: 12px;font-weight: normal;}
+input[type="button"],input[type="submit"], select,button{cursor:pointer;}
+table {border-collapse: collapse;border-spacing: 0;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+li {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;font-variant: normal;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+fieldset, img,a img, iframe {border-width:0;border-style:none;}
+iframe{overflow:hidden;}
+img{-ms-interpolation-mode: bicubic;}/* https://developer.mozilla.org/En/CSS/image-rendering */
+textarea{overflow-y:auto;}
+legend {color: #000;}
+
+/*测试使用*/
+body{background:#333}
+.mod_canvas{margin:20px auto;position:relative;}
+
+/*layer css*/
+.mod_canvas{background-position:center top;width:500px;height:400px;background-color:#fff;}
+.mod_canvas .layer_1{
+	position:absolute;left:220px;top:105px;background-size:100% 100%;background-image:url(../../project/23/coke-label.jpg);
+	-webkit-animation: frame_layer_1 8.94s infinite Linear alternate;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 8.94s infinite Linear alternate;-moz-animation-fill-mode:both;
+
+background-size:auto;}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-138px,-75px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;background-position:200px 0;}
+	100% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-138px,-75px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;background-position:-536px 0;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:194px;height:336px;-moz-transform: translate(-138px,-75px)  scale(1,1) skew(0deg)   rotate(0deg) ;background-position:200px 0;}
+	100% {width:194px;height:336px;-moz-transform: translate(-138px,-75px)  scale(1,1) skew(0deg)   rotate(0deg) ;background-position:-536px 0;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:135px;top:30px;background-size:100% 100%;background-image:url(../../project/23/coke-can.png);
+	-webkit-animation: frame_layer_2 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_2 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-53px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-53px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:194px;height:336px;-moz-transform: translate(-53px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+	100% {width:194px;height:336px;-moz-transform: translate(-53px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="mod_canvas">
+	<div class="layer_1"></div>
+	<div class="layer_2"></div>
+</div>
+
+
+</body>
+</html>

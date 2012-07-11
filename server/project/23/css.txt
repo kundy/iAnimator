@@ -1,0 +1,29 @@
+.mod_canvas{background-position:center top;width:500px;height:400px;background-color:#fff;}
+.mod_canvas .layer_1{
+	position:absolute;left:220px;top:105px;background-size:100% 100%;background-image:url(../../project/23/coke-label.jpg);
+	-webkit-animation: frame_layer_1 8.94s infinite Linear alternate;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 8.94s infinite Linear alternate;-moz-animation-fill-mode:both;
+
+background-size:auto;}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-138px,-75px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;background-position:200px 0;}
+	100% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-138px,-75px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;background-position:-536px 0;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:194px;height:336px;-moz-transform: translate(-138px,-75px)  scale(1,1) skew(0deg)   rotate(0deg) ;background-position:200px 0;}
+	100% {width:194px;height:336px;-moz-transform: translate(-138px,-75px)  scale(1,1) skew(0deg)   rotate(0deg) ;background-position:-536px 0;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:135px;top:30px;background-size:100% 100%;background-image:url(../../project/23/coke-can.png);
+	-webkit-animation: frame_layer_2 1s infinite;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_2 1s infinite;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-53px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:194px;height:336px;-webkit-transform:perspective(0px) translate(-53px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {width:194px;height:336px;-moz-transform: translate(-53px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+	100% {width:194px;height:336px;-moz-transform: translate(-53px,0px)  scale(1,1) skew(0deg)   rotate(0deg) ;}
+}

@@ -1,0 +1,29 @@
+.mod_canvas{background-position:center top;width:1000px;height:500px;background-color:#fff;background-image:url(../../project/22//background.png)}
+.mod_canvas .layer_0{
+	position:absolute;left:219px;top:0px;background-size:100% 100%;background-image:url(../../project/22/foreground.png);
+	-webkit-animation: frame_layer_0 85.74s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_0 85.74s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_0 {
+	0% {width:500px;height:500px;-webkit-transform:perspective(0px) translate(497px,-20px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:500px;height:500px;-webkit-transform:perspective(0px) translate(-1000px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_0 {
+	0% {width:500px;height:500px;-moz-transform:perspective(0px) translate(497px,-20px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:500px;height:500px;-moz-transform:perspective(0px) translate(-1000px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+.mod_canvas .layer_1{
+	position:absolute;left:500px;top:0px;background-size:100% 100%;background-image:url(../../project/22/midground.png);
+	-webkit-animation: frame_layer_1 101.49s infinite Linear;-webkit-animation-fill-mode:both;
+	-moz-animation: frame_layer_1 101.49s infinite Linear;-moz-animation-fill-mode:both;
+
+}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:500px;height:500px;-webkit-transform:perspective(0px) translate(-500px,6px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:500px;height:500px;-webkit-transform:perspective(0px) translate(-1002px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:500px;height:500px;-moz-transform:perspective(0px) translate(-500px,6px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+	100% {width:500px;height:500px;-moz-transform:perspective(0px) translate(-1002px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(0deg) ;}
+}

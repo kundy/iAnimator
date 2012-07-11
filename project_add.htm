@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="os_win7"><!--os_winXp,os_mac,os_vista,os_win7-->
+<head>
+	<meta charset="utf-8" />
+	<title>新建项目</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wrap page_project page_project_add">
+	<div class="frame_title">
+		<h3>添加项目</h3>
+		<a id="_id_frame_close" class="ico ico_frame_close"></a>
+	</div>
+	<div class="mod_project_add">
+		<div class="inner">
+			<div class="bd">
+				<div class="option_item clearfix">
+					<span class="title">项目名称：</span>
+					<span class="content">
+						<input type="text" value="" id="project_name"  />
+						<span class="prompt_text" id="prompt_text"></span>
+					</span>
+				</div>
+				<div class="option_item clearfix">
+					<span class="title">画板宽：</span>
+					<input class="value" id="canvas_width" value="400" /><span class="unit">&nbsp;px</span>
+				</div>
+				<div class="option_item clearfix">
+					<span class="title">画板高：</span>
+					<input class="value"  id="canvas_height" value="300" /><span class="unit">&nbsp;px</span>
+				</div>
+				<div class="option_item clearfix">
+					<div class="content">
+						<span class="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作者：</span>
+						<input class="value" id="project_author" value="" />
+					</div>
+				</div>
+			</div>
+			<div class="ft">
+				<a id="btn_project_add" class="btn btn_blue">确定</a>
+				<a id="btn_project_cancel" class="btn btn_gray">取消</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/project.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(){
+
+	parent.frame_resize();
+	project_add_init();
+	var d=new Date();
+	$("#project_name").val("Project_"+add_zero((d.getMonth()+1))+add_zero(d.getDate()));
+	$('#_id_frame_close,#btn_project_cancel').click(function(){
+		parent.frame_close();
+	});
+	if(parent.project_info.id.length==0){
+		$('#_id_frame_close,#btn_project_cancel').unbind("click").click(function(){
+			window.location.href="project_list.htm";
+		});
+	}
+
+});
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

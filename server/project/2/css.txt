@@ -1,0 +1,43 @@
+.mod_canvas{width:400px;height:300px;background-color:#81c4ae;}
+.mod_canvas .layer_1{
+	position:absolute;left:93px;top:96px;background-size:100% 100%;background-image:url(../../project/2/2157026_103313663117_2.jpg);
+	-webkit-animation: frame_layer_1 1.03s infinite;
+	-moz-animation: frame_layer_1 1.03s infinite;
+
+}
+@-webkit-keyframes frame_layer_1 {
+	0% {width:256px;height:245px;}
+	19.417475728155% {width:256px;height:245px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(15deg) ;-webkit-transform-origin:50% 0%;}
+	38.834951456311% {width:256px;height:245px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-10deg) ;-webkit-transform-origin:50% 0%;}
+	58.252427184466% {width:256px;height:245px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(5deg) ;-webkit-transform-origin:50% 0%;}
+	77.669902912621% {width:256px;height:245px;-webkit-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-5deg) ;-webkit-transform-origin:50% 0%;}
+	100% {width:256px;height:245px;}
+}
+@-moz-keyframes frame_layer_1 {
+	0% {width:256px;height:245px;}
+	19.417475728155% {width:256px;height:245px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(15deg) ;-moz-transform-origin:50% 0%;}
+	38.834951456311% {width:256px;height:245px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-10deg) ;-moz-transform-origin:50% 0%;}
+	58.252427184466% {width:256px;height:245px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(5deg) ;-moz-transform-origin:50% 0%;}
+	77.669902912621% {width:256px;height:245px;-moz-transform:perspective(0px) translate(0px,0px) translateZ(0px) scale(1,1) skew(0deg) rotateX(0deg) rotateY(0deg) rotate(-5deg) ;-moz-transform-origin:50% 0%;}
+	100% {width:256px;height:245px;}
+}
+.mod_canvas .layer_2{
+	position:absolute;left:167px;top:22px;background-size:100% 100%;background-image:url(../../project/2/cooperate_csdn.jpg);
+	-webkit-animation: frame_layer_2 1s infinite;
+	-moz-animation: frame_layer_2 1s infinite;
+
+}
+@-webkit-keyframes frame_layer_2 {
+	0% {opacity:1;width:80px;height:36px;}
+	25% {opacity:0.5;width:80px;height:36px;}
+	50% {opacity:1;width:80px;height:36px;}
+	75% {opacity:0.5;width:80px;height:36px;}
+	100% {opacity:1;width:80px;height:36px;}
+}
+@-moz-keyframes frame_layer_2 {
+	0% {opacity:1;width:80px;height:36px;}
+	25% {opacity:0.5;width:80px;height:36px;}
+	50% {opacity:1;width:80px;height:36px;}
+	75% {opacity:0.5;width:80px;height:36px;}
+	100% {opacity:1;width:80px;height:36px;}
+}
