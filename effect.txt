@@ -1,4 +1,4 @@
-[
+﻿[ 
 	{	"name":"吸引",
 		"name_eng":"Attention seekers",
 		"data":[
